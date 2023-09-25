@@ -1,12 +1,4 @@
-@font-face {
-  font-family: "FreshPressBold";
-  src: url("client/assets/font/fresh-press-bold.woff2") format("woff2"),
-    /* Modern Browsers */ url("client/assets/font/fresh-press-bold.woff")
-      format("woff"); /* Legacy Browsers */
-  font-weight: normal;
-  font-style: normal;
-}
-
+/* Common Styles for both Desktop and Mobile */
 body {
   display: flex;
   font-family: "freshpressbold", sans-serif;
@@ -20,6 +12,7 @@ body {
   width: 100vw;
   height: 100vh;
 }
+
 li {
   list-style-type: none;
 }
@@ -27,7 +20,8 @@ li {
 img {
   height: 15vh;
 }
-/* header */
+
+/* Header */
 #titles {
   display: flex;
   align-items: center;
@@ -74,9 +68,8 @@ h1 {
   color: black;
   font-weight: bold;
 }
-/* End header */
 
-/* main container */
+/* Main container */
 #main-container {
   display: flex;
   flex-direction: row;
@@ -84,7 +77,6 @@ h1 {
 }
 
 /* Cart section */
-
 #package_container {
   display: flex;
   flex-direction: column;
@@ -101,17 +93,15 @@ h1 {
 .select-quantity {
   position: absolute;
   left: 28vw;
-  align-self: center;
 }
+
 .selected_price {
   position: absolute;
   left: 38vw;
-  align-self: center;
 }
 
 .single-package {
   width: 40vw;
-  /*   background-color: rgba(128, 128, 128, 0.242); */
 }
 
 #cart_items {
@@ -129,10 +119,8 @@ h1 {
   margin-top: 1vh;
   font-weight: bold;
 }
-/* end cart section */
 
-/* client section */
-
+/* Client section */
 #client_container {
   font-family: Helvetica, sans-serif;
   border-left: dotted gray 2px;
@@ -143,6 +131,7 @@ h1 {
   display: flex;
   align-items: center;
 }
+
 input {
   border: solid gray 1px;
   border-radius: 5px;
@@ -151,10 +140,8 @@ input {
   margin-inline: 1vw;
   margin-bottom: 5vh;
 }
-/* end client section */
 
-/* order button */
-
+/* Order button */
 .btn {
   font-family: Koulen;
   font-weight: 300;
@@ -186,5 +173,3 @@ input {
   align-items: center; /* Center vertically */
   margin-top: 20px; /* Adjust as needed */
 }
-
-/* end order button */
