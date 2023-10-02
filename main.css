@@ -8,7 +8,7 @@ body {
 }
 
 #cart-container {
-  border: solid black 1px;
+  border-bottom: solid black 1px;
   width: 100vw;
   height: 100vh;
 }
@@ -95,12 +95,12 @@ h1 {
 
 .select-quantity {
   position: absolute;
-  left: 60vw;
+  left: 58vw;
 }
 
 .selected_price {
   position: absolute;
-  left: 80vw;
+  left: 78vw;
 }
 
 #cart_items {
@@ -124,12 +124,12 @@ h1 {
 #client_container {
   font-family: Helvetica, sans-serif;
 
-  position: absolute;
   right: 1vw;
   height: 100vh;
   padding: 0;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 input {
@@ -171,4 +171,9 @@ input {
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
   margin-top: 20px; /* Adjust as needed */
+}
+
+h3 {
+  text-align: center;
+  color: blue;
 }
