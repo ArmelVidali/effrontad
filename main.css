@@ -32,15 +32,16 @@ img {
 h1 {
   padding-left: 3vw;
   color: #330000;
-  font-size: 40px;
+  font-size: 5vh;
 }
 
 #product_header {
   display: flex;
   border-bottom: solid gray 1px;
-  width: 40vw;
+  padding-left: 0;
+
   padding-bottom: 1vw;
-  font-size: 25px;
+  font-size: 2vh;
 }
 
 #product_header > * {
@@ -53,12 +54,12 @@ h1 {
 
 #quantity {
   position: absolute;
-  left: 28vw;
+  left: 58vw;
 }
 
 #price {
   position: absolute;
-  left: 38vw;
+  left: 78vw;
 }
 
 #personal_infos {
@@ -67,12 +68,13 @@ h1 {
   font-family: "Helvetica, sans-serif";
   color: black;
   font-weight: bold;
+  height: 100vh;
 }
 
 /* Main container */
 #main-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   height: fit-content;
 }
 
@@ -87,21 +89,18 @@ h1 {
   flex-direction: row;
   margin-top: 0;
   margin-bottom: 0;
+  padding: 1vw;
   border-bottom: dotted 1px gray;
 }
 
 .select-quantity {
   position: absolute;
-  left: 28vw;
+  left: 60vw;
 }
 
 .selected_price {
   position: absolute;
-  left: 38vw;
-}
-
-.single-package {
-  width: 40vw;
+  left: 80vw;
 }
 
 #cart_items {
@@ -115,18 +114,19 @@ h1 {
 #total_price {
   font-family: "Helvetica, sans-serif";
   color: black;
-  margin-left: 33vw;
   margin-top: 1vh;
   font-weight: bold;
+  width: fit-content;
+  align-self: center;
 }
 
 /* Client section */
 #client_container {
   font-family: Helvetica, sans-serif;
-  border-left: dotted gray 2px;
+
   position: absolute;
   right: 1vw;
-  height: 50vh;
+  height: 100vh;
   padding: 0;
   display: flex;
   align-items: center;
@@ -148,7 +148,6 @@ input {
   font-size: 29px;
   color: #fff;
   background-color: #000000;
-  padding: 10px 30px;
   border: none;
   box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
   border-radius: 9px;
