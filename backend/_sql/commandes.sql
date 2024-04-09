@@ -1,0 +1,5 @@
+SELECT TOP (1000) [commandes_id]
+      ,[id_client]
+      ,[date_commande]
+      ,[adresse_livraison]
+  FROM [dbo].[commandes]

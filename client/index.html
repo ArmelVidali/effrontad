@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <script src="main.js"></script>
+    <script src="node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="node_modules/sweetalert2/dist/sweetalert2.min.css"
+    />
+
+    <title>Reserver</title>
+  </head>
+  <body>
+    <div id="cart-container">
+      <div id="titles">
+        <img src="assets/img/logo-efrontad.webp" alt="logo-efrontad" />
+        <h1>Reservation de colis</h1>
+      </div>
+
+      <ul id="product_header">
+        <li id="package_product">Colis</li>
+        <li id="quantity_price">
+          <span id="quantity">Quantité</span> <span id="price">Prix</span>
+        </li>
+      </ul>
+      <div id="main-container">
+        <div id="package_container">
+          <ul class="single-package">
+            <li><img src="assets/img/veau.webp" alt="veau" /></li>
+            <li class="select-quantity">
+              <select
+                id="select_boeuf"
+                onchange="update_price('select_boeuf', 'prix_boeuf')"
+                price="15"
+              >
+                <option value="0" selected>0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </li>
+            <li class="selected_price"><span id="prix_boeuf">0</span>€</li>
+          </ul>
+          <ul class="single-package">
+            <li><img src="assets/img/veau.webp" alt="veau" /></li>
+            <li class="select-quantity">
+              <select
+                id="select_veau"
+                onchange="update_price('select_veau', 'prix_veau')"
+                price="50"
+              >
+                <option value="0" selected>0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </li>
+            <li class="selected_price"><span id="prix_veau">0</span>€</li>
+          </ul>
+          <ul class="single-package">
+            <li><img src="assets/img/veau.webp" alt="veau" /></li>
+            <li class="select-quantity">
+              <select
+                id="select_biere"
+                onchange="update_price('select_biere', 'prix_biere')"
+                price="29"
+              >
+                <option value="0" selected>0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </li>
+            <li class="selected_price"><span id="prix_biere">0</span>€</li>
+          </ul>
+          <span id="total_price"
+            >Total : <span id="total_price_value">0 </span> €</span
+          >
+        </div>
+      </div>
+      <div id="client_container">
+        <form id="orderForm">
+          <ul>
+            <h3>Finaliser ma commande</h3>
+            <li id="name_surname">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                minlength="2"
+                size="15"
+                placeholder="Prénom *"
+                required
+              />
+              <input
+                type="text"
+                id="surname"
+                name="surname"
+                minlength="2"
+                size="15"
+                placeholder="Nom *"
+                required
+              />
+            </li>
+            <li id="email_adress">
+              <input
+                type="text"
+                id="email"
+                name="email"
+                minlength="6"
+                size="15"
+                placeholder="email *"
+                required
+              />
+              <input
+                pattern="[0-9]+"
+                id="Tel"
+                name="Tel"
+                minlength="2"
+                size="15"
+                value="+33 "
+                required
+              />
+            </li>
+            <li>
+              <input
+                type="text"
+                id="adress"
+                name="adress"
+                minlength="2"
+                size="30"
+                placeholder="Adresse *"
+                required
+              />
+            </li>
+            <div class="button-container">
+              <button type="submit" class="btn">Reserver</button>
+            </div>
+          </ul>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

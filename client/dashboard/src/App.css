@@ -1,0 +1,176 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: rgb(63, 114, 175);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin: 0 24px;
+}
+.logo .menu-icon {
+  color: #333;
+  font-size: 24px;
+  margin-right: 14px;
+  cursor: pointer;
+}
+.logo .logo-name {
+  color: #333;
+  font-size: 22px;
+  font-weight: 500;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0; /* Changed to 0 to make the sidebar always open */
+  height: 98%;
+  width: 15vw;
+  padding: 20px 0;
+  background-color: #dbe2ef;
+  box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+  margin: 0.5vh;
+  border-radius: 15px;
+  border: solid 2px #b0c4ff;
+
+  /* Removed the transition property to make the sidebar always open */
+}
+.sidebar .sidebar-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 16px;
+}
+.sidebar-content .list {
+  list-style: none;
+}
+.list .nav-link {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  padding: 14px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.lists .nav-link:hover {
+  background-color: #112d4e;
+}
+.nav-link .icon {
+  margin-right: 14px;
+  font-size: 20px;
+  color: #000000;
+}
+.nav-link .link {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 400;
+}
+.lists .nav-link:hover .icon,
+.lists .nav-link:hover .link {
+  color: #fff;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 1000vh;
+  width: 200%;
+  opacity: 0;
+  pointer-events: none;
+  /* Removed transition and background properties to keep the overlay always hidden */
+}
+
+/* Datamframe */
+
+#df {
+  position: absolute;
+  left: 16vw;
+  top: 1vh;
+  background-color: rgb(0, 0, 0);
+  max-height: 50vh;
+}
+table {
+  position: absolute;
+  width: 83vw;
+}
+tbody {
+  border: solid black 1px;
+  border-radius: 10px;
+  color: #112d4e;
+  font-size: large;
+  font-weight: 500;
+}
+/* Datamframe */
+
+/* Table header */
+
+#df thead {
+  background-color: #000000; /* Header row background color */
+  color: white;
+}
+thead tr td {
+  background-color: rgb(21, 30, 144);
+}
+thead {
+  position: sticky;
+  top: 0vh;
+  z-index: 99;
+}
+
+/* Table header */
+
+/* Table rows */
+.processed_order {
+  background-color: rgba(123, 214, 123, 0.999) !important;
+}
+
+.unprocessed_order {
+  background-color: rgb(241, 98, 98) !important;
+}
+
+#df tr:nth-child(odd) {
+  background-color: #f9f9f9; /* Alternate row background color */
+}
+
+#df tr:nth-child(even) {
+  background-color: #9ea6b5; /* Alternate row background color */
+}
+th,
+td {
+  text-align: center;
+}
+
+tr,
+th {
+  height: 3vh;
+}
+
+tbody tr :hover {
+  background-color: #b0c4ff;
+}
+
+/* Table rows */
+
+/* Spinner */
+.spinner-container {
+  display: flex;
+
+  justify-content: center;
+}
+/* Spinner */
+
+/* Charts container */
+
+#charts_container {
+  position: absolute;
+  left: 20vw;
+  background-color: white;
+}
